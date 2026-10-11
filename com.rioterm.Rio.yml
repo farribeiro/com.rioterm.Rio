@@ -3,7 +3,7 @@ app-id: com.rioterm.Rio
 runtime: org.freedesktop.Platform
 runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
-
+command: rio
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
 
@@ -13,8 +13,6 @@ finish-args:
   - --socket=fallback-x11
   - --socket=wayland
   - --talk-name=org.freedesktop.Flatpak
-
-command: rio
 
 modules:
   - name: rio
